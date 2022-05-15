@@ -8,6 +8,40 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true
-	}
+		"strict": true,
+		"paths": {
+			"$components": [
+				"src/lib/components"
+			],
+			"$components/*": [
+				"src/lib/components/*"
+			],
+			"$styles": [
+				"src/styles"
+			],
+			"$styles/*": [
+				"src/styles/*"
+			],
+			"$utils": [
+				"src/lib/utils"
+			],
+			"$utils/*": [
+				"src/lib/utils/*"
+			],
+			"$lib": [
+				"src/lib"
+			],
+			"$lib/*": [
+				"src/lib/*"
+			],
+		}
+	},
+	"include": [
+		"src/**/*.d.ts",
+		"src/**/*.js",
+		"src/**/*.cjs",
+		"src/**/*.mjs",
+		"src/**/*.ts",
+		"src/**/*.svelte"
+	]
 }
