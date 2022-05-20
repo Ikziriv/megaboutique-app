@@ -4,16 +4,23 @@
     Footer, 
     DiscountBar,
     MegaMenu,
+    MegaList,
     ShippingNav
   } from '$components/index'
   import "../styles/css/app.css";
+
+  let megaShow = false;
 </script>
   
+<DiscountBar />
 <ShippingNav />
 <Header />
-<MegaMenu />
-<DiscountBar />
-  <main class="main-body">
+<MegaMenu {megaShow} />
+{#if megaShow}
+  <MegaList />
+{/if}
+
+  <main class="main-body w-full h-auto border-t border-[#fc6d46]">
     <slot />
   </main>
 <Footer />
