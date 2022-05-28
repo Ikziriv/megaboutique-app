@@ -1,4 +1,6 @@
 <script>
+  import { Jumbotron } from '$components/index'
+  
   const shopCategory = [{
       title: "Cookware",
       subTitle: "The best cookware in the marketplace",
@@ -6,37 +8,37 @@
       imgAltCategory: "Cookware"
   }, {
       title: "Kitchenware",
-      subTitle: "The best cookware in the marketplace",
+      subTitle: "The best kitchenware in the marketplace",
       imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Kitchenware_400x400.jpg",
       imgAltCategory: "Kitchenware"
   }, {
       title: "Knives",
-      subTitle: "The best cookware in the marketplace",
+      subTitle: "The best knives in the marketplace",
       imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Knives_400x400.jpg",
       imgAltCategory: "Knives"
   }, {
       title: "Tableware",
-      subTitle: "The best cookware in the marketplace",
+      subTitle: "The best tableware in the marketplace",
       imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Tableware_400x400.jpg",
       imgAltCategory: "Tableware"
   }, {
       title: "Home Decor",
-      subTitle: "The best cookware in the marketplace",
+      subTitle: "The best home decor in the marketplace",
       imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Home_decor_400x400.jpg",
       imgAltCategory: "Home Decor"
   }, {
       title: "Home Living",
-      subTitle: "The best cookware in the marketplace",
+      subTitle: "The best home living in the marketplace",
       imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Home_living_400x400.jpg",
       imgAltCategory: "Home Living"
   }, {
       title: "Travel & Outdoor",
-      subTitle: "The best cookware in the marketplace",
+      subTitle: "The best travel & outdoor in the marketplace",
       imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Travel_and_outdoors_v2.jpg",
       imgAltCategory: "Travel & Outdoor"
   }, {
       title: "Drinkware",
-      subTitle: "The best cookware in the marketplace",
+      subTitle: "The best drinkware in the marketplace",
       imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Gifts_400x400.jpg",
       imgAltCategory: "Drinkware"
   }, ]
@@ -50,6 +52,8 @@
   </section>
 
   <section class="flex flex-col w-full h-auto py-4 px-8 md:px-16">
+    <Jumbotron />
+
     <div class="w-full h-auto flex justify-start items-center py-4 border-b px-8">
       <span class="uppercase text-xl font-bold text-gray-700">SHOP BY CATEGORY</span>
     </div>
@@ -140,11 +144,11 @@
         <div class="col-span-full md:col-span-1 flex flex-col space-y-4 w-full h-auto px-8 md:px-8">
           <div class="flex flex-col justify-center items-start md:items-center md:py-4">
             <ul>
-              <li class="text-gray-800 hover:text-[#f76138]">About Us</li>
-              <li class="text-gray-800 hover:text-[#f76138]">Delivery Information</li>
-              <li class="text-gray-800 hover:text-[#f76138]">Privacy Policy</li>
-              <li class="text-gray-800 hover:text-[#f76138]">Terms & Condition</li>
-              <li class="text-gray-800 hover:text-[#f76138]">Return Policy</li>
+              <li class="font-normal text-gray-800 hover:text-[#f76138]">About Us</li>
+              <li class="font-normal text-gray-800 hover:text-[#f76138]">Delivery Information</li>
+              <li class="font-normal text-gray-800 hover:text-[#f76138]">Privacy Policy</li>
+              <li class="font-normal text-gray-800 hover:text-[#f76138]">Terms & Condition</li>
+              <li class="font-normal text-gray-800 hover:text-[#f76138]">Return Policy</li>
             </ul>
           </div>
         </div>

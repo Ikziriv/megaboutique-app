@@ -3,9 +3,14 @@ export { default as Header }
 from './header/Header.svelte'
 export { default as Footer }
 from './footer/Footer.svelte'
+    // Carousel
+export { default as Jumbotron }
+from './carousel/Jumbotron.svelte'
     // General
 export { default as Placeholder }
 from './general/Placeholder.svelte'
+export { default as ButtonHelp }
+from './general/button/ButtonHelp.svelte'
 
 export { default as DiscountBar }
 from './alert/DiscountBar.svelte'

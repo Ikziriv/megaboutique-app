@@ -2,7 +2,7 @@
     export let megaShow;
 </script>
 <div class="bg-gray-100/50 w-full h-auto md:h-12 px-8 md:px-16 py-0 grid grid-cols-12 gap-0">
-    <div class="col-span-full md:col-span-2 w-full h-12 flex justify-center items-center border bg-white hover:bg-gray-50">
+    <div class="cursor-pointer col-span-full md:col-span-2 w-full h-12 flex justify-center items-center border border-b-0 hover:border-[#fc6d46] bg-white">
         <div class="w-full h-auto flex justify-between md:justify-center items-center space-x-2 px-4 md:px-0">
             <span class="w-auto h-auto mr-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
