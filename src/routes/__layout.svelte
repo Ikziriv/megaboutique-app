@@ -8,9 +8,9 @@
     ButtonHelp,
     ShippingNav
   } from '$components/index'
-  import "../styles/css/app.css";
+  import { megaShow } from '$lib/store/index'
 
-  let megaShow = false;
+  import "../styles/css/app.css";
 </script>
   
 <div class="w-full h-auto relative">
@@ -18,9 +18,9 @@
   <ShippingNav />
   <Header />
   <MegaMenu />
-  <!-- {#if megaShow}
+  {#if $megaShow}
     <MegaList />
-  {/if} -->
+  {/if}
   
     <main class="main-body w-full h-auto border-t border-[#fc6d46]">
       <slot />
