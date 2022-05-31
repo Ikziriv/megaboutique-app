@@ -2,8 +2,8 @@
 Change UI from template to Tailwindcss Framework.
 <br>Look fresh for the UI
 <br>Can see in this link :
-<br>Before : <a href="https://www.megaboutique.com.au/" target="__blank">Before site</a>
-<br>After : <a href="https://megaboutique-app.vercel.app/" target="__blank">After site</a>
+<br>Before : <a href="https://www.megaboutique.com.au/" target="_blank">Before site</a>
+<br>After : <a href="https://megaboutique-app.vercel.app/" target="_blank">After site</a>
 
 # create-svelte
 
