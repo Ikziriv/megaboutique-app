@@ -1,86 +1,24 @@
 <script>
   import { Jumbotron } from '$components/index'
-  
-  const shopCategory = [{
-      title: "Cookware",
-      subTitle: "The best cookware in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Cookware_400x400.jpg",
-      imgAltCategory: "Cookware"
-  }, {
-      title: "Kitchenware",
-      subTitle: "The best kitchenware in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Kitchenware_400x400.jpg",
-      imgAltCategory: "Kitchenware"
-  }, {
-      title: "Knives",
-      subTitle: "The best knives in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Knives_400x400.jpg",
-      imgAltCategory: "Knives"
-  }, {
-      title: "Tableware",
-      subTitle: "The best tableware in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Tableware_400x400.jpg",
-      imgAltCategory: "Tableware"
-  }, {
-      title: "Home Decor",
-      subTitle: "The best home decor in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Home_decor_400x400.jpg",
-      imgAltCategory: "Home Decor"
-  }, {
-      title: "Home Living",
-      subTitle: "The best home living in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Home_living_400x400.jpg",
-      imgAltCategory: "Home Living"
-  }, {
-      title: "Travel & Outdoor",
-      subTitle: "The best travel & outdoor in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Travel_and_outdoors_v2.jpg",
-      imgAltCategory: "Travel & Outdoor"
-  }, {
-      title: "Drinkware",
-      subTitle: "The best drinkware in the marketplace",
-      imgCategory: "https://img-cdn-02.megaboutique.com.au/banners/2022_Gifts_400x400.jpg",
-      imgAltCategory: "Drinkware"
-  }, ]
+	import { shopCategory } from '../lib/data/grid-categories';
+  import { GridCategories } from '$components/index'
 </script>
 
 <div class="w-full h-auto flex flex-col space-y-4 md:space-y-8">
     
-  <section class="flex flex-col w-full h-auto py-4 px-8 md:px-16">
-    <div class="w-full h-auto flex justify-center items-center py-4 border-b px-8">
+  <section class="flex flex-col w-full h-auto py-0 px-8 md:px-16">
+    <div class="w-full h-auto flex justify-center items-center py-0 border-b px-8">
     </div>
   </section>
 
-  <section class="flex flex-col w-full h-auto py-4 px-8 md:px-16">
-    <Jumbotron />
+  <section class="flex flex-col w-full h-auto py-0 px-8 md:px-16">
+    <!-- <Jumbotron /> -->
 
-    <div class="w-full h-auto flex justify-start items-center py-4 border-b px-8">
+    <div class="w-full h-auto flex justify-start items-center md:mt-4 py-4 px-8">
       <span class="uppercase text-xl font-bold text-gray-700">SHOP BY CATEGORY</span>
     </div>
     <div class="grid grid-cols-4 gap-4 w-full h-auto justify-center items-center">
-      
-      {#each shopCategory as card}
-      <div class="col-span-full md:col-span-1">
-        <div class="w-full flex justify-center items-center">
-          <div class="w-full px-1 md:px-4 py-4 md:py-0">
-              <div class="card flex flex-col justify-center p-4 bg-white rounded-2xl shadow hover:shadow-xl">
-                <div class="prod-img">
-                    <img src={card.imgCategory} alt={card.imgAltCategory} class="w-full object-cover object-center rounded-2xl"/>
-                </div>  
-                <div class="flex flex-col mt-4 px-4 py-4 border-b">
-                    <span class="text-2xl text-[#fc6d46] font-bold">
-                      {card.title}
-                    </span>
-                    <span class="text-xs uppercase text-gray-400">
-                      {card.subTitle}
-                    </span>
-                </div>
-              </div>
-          </div>
-        </div>
-      </div>
-      {/each}
-
+      <GridCategories items={shopCategory} />
     </div>
   </section>
 

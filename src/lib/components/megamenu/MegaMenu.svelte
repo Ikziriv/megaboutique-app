@@ -1,5 +1,5 @@
 <script>
-    export let megaShow;
+    
 </script>
 <div class="bg-gray-100/50 w-full h-auto md:h-12 px-8 md:px-16 py-0 grid grid-cols-12 gap-0">
     <div class="cursor-pointer col-span-full md:col-span-2 w-full h-12 flex justify-center items-center border border-b-0 hover:border-[#fc6d46] bg-white">

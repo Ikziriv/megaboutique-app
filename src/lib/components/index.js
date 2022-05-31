@@ -7,6 +7,10 @@ from './footer/Footer.svelte'
 export { default as Jumbotron }
 from './carousel/Jumbotron.svelte'
     // General
+export { default as AutoComplete }
+from './autocomplete/AutoComplete.svelte'
+export { default as GridCategories }
+from './grid/GridCategories.svelte'
 export { default as Placeholder }
 from './general/Placeholder.svelte'
 export { default as ButtonHelp }

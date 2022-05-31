@@ -17,10 +17,10 @@
   <DiscountBar />
   <ShippingNav />
   <Header />
-  <MegaMenu {megaShow} />
-  {#if megaShow}
+  <MegaMenu />
+  <!-- {#if megaShow}
     <MegaList />
-  {/if}
+  {/if} -->
   
     <main class="main-body w-full h-auto border-t border-[#fc6d46]">
       <slot />
