@@ -1,3 +1,10 @@
+# What's new in this redesign
+Change UI from template to Tailwindcss Framework.
+<br>Look fresh for the UI
+<br>Can see in this link :
+<br>Before : <a href="https://www.megaboutique.com.au/" target="_blank">Before site</a>
+<br>After : <a href="https://megaboutique-app.vercel.app/" target="_blank">After site</a>
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
